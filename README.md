@@ -54,7 +54,7 @@ npm install
 
 ## Tech Stack
 
-    - **Backend**: Solidity smart contracts
-    - **Frontend**: Next.js
-    - **Blockchain**: Ethereum (mainnet/testnet)
-    - **Storage**: IPFS (for storing metadata like certificates)
+- **Backend**: Solidity smart contracts
+- **Frontend**: Next.js
+- **Blockchain**: Ethereum (mainnet/testnet)
+- **Storage**: IPFS (for storing metadata like certificates)
