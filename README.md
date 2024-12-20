@@ -9,11 +9,11 @@ This project includes smart contracts for issuing NFTs and a frontend for verify
 
 ## 🚀 Getting Started
 
-### 1. Smart Contracts
+### 1. Frontend
 
 1. **Install dependencies**:
 
    ```bash
-   cd contracts
+   cd frontend
    npm install
    ```
