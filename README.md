@@ -29,32 +29,27 @@ npm install
 ## Key Features
 
 1. Skill Certification NFT:
-
-    - Users can claim verified NFTs for skills (e.g., "Full-Stack Development").
-    - Certificates include metadata: skill type, issuing authority, date, and unique identifier.
+  - Users can claim verified NFTs for skills (e.g., "Full-Stack Development").
+  - Certificates include metadata: skill type, issuing authority, date, and unique identifier.
 
 2. Minting & Verification:
-
-    - Smart contracts handle minting and verifying skill NFTs.
-    - Employers can check certificate authenticity directly on the platform.
+  - Smart contracts handle minting and verifying skill NFTs.
+  - Employers can check certificate authenticity directly on the platform.
 
 3. Frontend Portal (Angular/Next.js):
-
-    - **Profile Page**: Showcases a user's certified skills and achievements.
-    - **Skill Verification Page**: Allows employers to input NFT IDs and verify credentials.
-    - **Minting Dashboard**: For users to request or mint new skill certifications.
+  - **Profile Page**: Showcases a user's certified skills and achievements.
+  - **Skill Verification Page**: Allows employers to input NFT IDs and verify credentials.
+  - **Minting Dashboard**: For users to request or mint new skill certifications.
 
 4. Blockchain Integration:
-
-    - Smart contracts on Ethereum or Polygon for minting NFTs.
-    - **Gas-fee optimization** for cost-effective transactions.
+  - Smart contracts on Ethereum or Polygon for minting NFTs.
+  - **Gas-fee optimization** for cost-effective transactions.
 
 5. DAO Governance (Future Scope):
-    - A decentralized community to decide on new skills, certification standards, and platform improvements.
+  - A decentralized community to decide on new skills, certification standards, and platform improvements.
 
 ## Tech Stack
-
-    - **Backend**: Solidity smart contracts
-    - **Frontend**: Next.js
-    - **Blockchain**: Ethereum (mainnet/testnet)
-    - **Storage**: IPFS (for storing metadata like certificates)
+  - **Backend**: Solidity smart contracts
+  - **Frontend**: Next.js
+  - **Blockchain**: Ethereum (mainnet/testnet)
+  - **Storage**: IPFS (for storing metadata like certificates)
