@@ -38,7 +38,7 @@ npm install
     - Smart contracts handle minting and verifying skill NFTs.
     - Employers can check certificate authenticity directly on the platform.
 
-3. Frontend Portal (Angular/Next.js):
+3. Frontend Portal (Next.js):
 
     - **Profile Page**: Showcases a user's certified skills and achievements.
     - **Skill Verification Page**: Allows employers to input NFT IDs and verify credentials.
