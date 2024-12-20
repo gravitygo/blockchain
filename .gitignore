@@ -1,59 +1,62 @@
+# lua vim
+script.lua
+
 # =========================
 # Frontend Dependencies
 # =========================
-/frontend/node_modules
-/frontend/.pnp
-/frontend/.pnp.*
+/frontend/skillchain/node_modules
+/frontend/skillchain/.pnp
+/frontend/skillchain/.pnp.*
 
 # Yarn
-/frontend/.yarn/*
-!/frontend/.yarn/patches
-!/frontend/.yarn/plugins
-!/frontend/.yarn/releases
-!/frontend/.yarn/versions
+/frontend/skillchain/.yarn/*
+!/frontend/skillchain/.yarn/patches
+!/frontend/skillchain/.yarn/plugins
+!/frontend/skillchain/.yarn/releases
+!/frontend/skillchain/.yarn/versions
 
 # =========================
 # Testing
 # =========================
-/frontend/coverage
+/frontend/skillchain/coverage
 
 # =========================
 # Next.js
 # =========================
-/frontend/.next/
-/frontend/out/
+/frontend/skillchain/.next/
+/frontend/skillchain/out/
 
 # =========================
 # Production Build
 # =========================
-/frontend/build
+/frontend/skillchain/build
 
 # =========================
 # Miscellaneous
 # =========================
-/frontend/.DS_Store
-/frontend/*.pem
+/frontend/skillchain/.DS_Store
+/frontend/skillchain/*.pem
 
 # =========================
 # Debug Logs
 # =========================
-/frontend/npm-debug.log*
-/frontend/yarn-debug.log*
-/frontend/yarn-error.log*
-/frontend/.pnpm-debug.log*
+/frontend/skillchain/npm-debug.log*
+/frontend/skillchain/yarn-debug.log*
+/frontend/skillchain/yarn-error.log*
+/frontend/skillchain/.pnpm-debug.log*
 
 # =========================
 # Environment Variables
 # =========================
-/frontend/.env*
+/frontend/skillchain/.env*
 
 # =========================
 # Vercel Deployment
 # =========================
-/frontend/.vercel
+/frontend/skillchain/.vercel
 
 # =========================
 # TypeScript
 # =========================
-/frontend/*.tsbuildinfo
-/frontend/next-env.d.ts
+/frontend/skillchain/*.tsbuildinfo
+/frontend/skillchain/next-env.d.ts
