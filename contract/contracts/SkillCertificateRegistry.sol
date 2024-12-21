@@ -9,9 +9,11 @@ contract SkillCertificateRegistry {
         string name;
         address issuingAuthority;
         uint256 issueDate;
+        bytes32 certificateId;
     }
 
     mapping(address => Skill[]) public userCertification;
+    mapping(bytes32 => address) public certificateToUser;
 
     /// @notice Event when certificate has been issued
     /// @dev Explain to a developer any extra details
@@ -23,22 +25,43 @@ contract SkillCertificateRegistry {
         address indexed recipient,
         string name,
         address issuingAuthority,
-        uint256 issueDate
+        uint256 issueDate,
+        bytes32 certificateId
     );
 
     /// @notice Issue a certificate
     /// @param _name Name of the certificate
     /// @param _user The person getting the certificate
     function issueCertification(string memory _name, address _user) public {
+        bytes32 certificateHash = keccak256(
+            abi.encodePacked(_name, msg.sender, block.timestamp)
+        );
+
         userCertification[_user].push(
             Skill({
                 name: _name,
                 issuingAuthority: msg.sender,
-                issueDate: block.timestamp
+                issueDate: block.timestamp,
+                certificateId: certificateHash
             })
         );
 
-        emit certificateIssued(_user, _name, msg.sender, block.timestamp);
+        certificateToUser[certificateHash] = _user;
+
+        emit certificateIssued(
+            _user,
+            _name,
+            msg.sender,
+            block.timestamp,
+            certificateHash
+        );
+    }
+
+    function verifyCertificate(
+        bytes32 _certificateId,
+        address _owner
+    ) public view returns (bool) {
+        return certificateToUser[_certificateId] == _owner;
     }
 
     function getCertificates(
